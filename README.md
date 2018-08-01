@@ -2,26 +2,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
-## Development server
+## What is this?
+Honestly, I don't really know! Haha!
+So pretty much, just drag and drop stuff on other stuff until it magically grows and stuff. Feeling like a cheater/hacker? Type window["Give Me MONEY!!!"](**Amount to give goes here**) into the console to get you some quick cash!
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## What's the point?
+I'm still trying to figure that one out.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Wanna see this app in action?
+See it [here](http://nate-farm.herokuapp.com)
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## But WHY?
+To cause confusion and chaos throughout the masses. MWAHAHAHA jk. Nah, it's just an opportunity to play with Angular and see what it's made of because I can.
