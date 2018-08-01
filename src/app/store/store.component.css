@@ -1,0 +1,50 @@
+:host {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+:host > div {
+    border: 1px solid black;
+    margin :12px;
+    padding: 12px;
+    transition: background-color 1s;
+}
+
+#popup {
+    position: fixed;
+    top: 30vh;
+    left: 40vw;
+    width: 20vw;
+    height: 20vh;
+    background-color: #fafafa;
+}
+
+#popup > div:nth-child(2n - 3) {
+    background-color: powderblue;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    margin: 12px;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+a {
+    margin: 4px 12px;
+    background-color: #439bff;
+    border-radius: 3px;
+    padding: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.disabled {
+    background-color: #ff5555 !important;
+}

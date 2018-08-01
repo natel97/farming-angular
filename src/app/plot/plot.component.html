@@ -1,0 +1,10 @@
+<img [ngClass]="{'dry': dry}" (dragover)="allowDrop($event)" draggable="true" (drop)="plantSomething($event)" [src]="image" (mouseover)="hover = true" (mouseleave)="hover = false">
+<div class="stats" *ngIf="plot.plant && hover">
+    <p [ngClass]="{'strikethrough': !plot.plantIsAlive()}" [hidden]="!dry">DRY!!</p>
+    <p [hidden]="plot.plantIsAlive()">DEAD!!!</p>
+    <p>{{plot.plant.name}}</p>
+    <div [hidden]="!plot.plantIsAlive()" id="living-details">
+        <p>Time left: {{getHoursLeft() | number: '1.2-2'}} seconds</p>
+        <p>Water: {{getWaterPercent() | number: '1.2-2'}}%</p>
+    </div>
+</div>

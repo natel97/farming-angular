@@ -1,0 +1,27 @@
+<div>This is farm!</div>
+<div id="plots">
+  <app-plot *ngFor="let plot of plots" [plot]="plot"></app-plot>
+</div>
+<div id="bottom-section">
+  <div id="top-bar">
+    <div (click)="changeIndex($event, 0)">Inventory</div>
+    <div (click)="changeIndex($event, 1)">Tools</div>
+    <div (click)="toggleHelp()" class="link">[?]
+      <div id="centered-help" class="hidden">
+        <p>Drag and drop to use!</p>
+        <p>Use the rake to get the land ready to plant stuff!</p>
+        <p>Water the plants to keep them alive! Greyish/brownish plants are not happy plants. Prickly sticks are beyond help</p>
+        <p>Once the plant looks good, use the harvester to harvest plants. If it doesn't work, the plants are not fully grown</p>
+        <p>If plants are beyond help or you make a mistake, set it ablaze and pretend it never happend. When in doubt, burn it out</p>
+        <p>Earn money and experience by playing the game! Don't be lazy.</p>
+        <p>Buy seeds in the store</p>
+        <p>If you run out of money, you're straight outta luck!</p>
+      </div>
+    </div>
+    <div class="link">
+      <a [routerLink]="['/store']">>Store</a>
+    </div>
+  </div>
+  <app-inventory *ngIf="selectedIndex === 0"></app-inventory>
+  <app-tools *ngIf="selectedIndex === 1"></app-tools>
+</div>

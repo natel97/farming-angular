@@ -1,0 +1,23 @@
+<div [ngClass]="{'disabled': item.cost * quantity > stats.money}" *ngFor="let item of items" (click)="selectItem(item)">
+  <img [src]="item.plant.images.harvested">
+  <div>${{item.cost}}</div>
+  <div>{{item.plant.name}}</div>
+</div>
+
+<div [ngClass]="{'disabled': 1000 > stats.money}" (click)="purchasePlot()">
+  <img width=96 height=96 src="../../assets/img/need-work-plot.svg">
+  <div>$1000</div>
+  <div>Purchase another plot of land for farming!</div>
+</div>
+
+<div class="hidden" id="popup">
+  <div (click)="cancel()">Cancel</div>
+  <div>How Many {{selectedItem ? selectedItem.plant.name : ''}}s?</div>
+  <input [(ngModel)]="quantity" type="range" min="1" max="20">
+  <br/>
+  <div [ngClass]="{'disabled': (selectedItem ? selectedItem.cost : 0) * quantity > stats.money}" (click)="purchase()">
+    Buy {{quantity}} for ${{selectedItem ? quantity * selectedItem.cost : 0}}!
+  </div>
+</div>
+
+<a [routerLink]="['/farm/1']">Back to farm!</a>

@@ -1,0 +1,28 @@
+:host {
+  min-width: 25%;
+  min-height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+img {
+  transition: filter 6s;
+}
+
+.dry {
+  filter: grayscale(80%) sepia(90%) saturate(200%);
+}
+
+.stats {
+  position: absolute;
+  left: 75vw;
+  top: 45vh;
+  background-color: #ddd;
+  padding: 12px;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}

@@ -1,0 +1,5 @@
+<div id="inventory" *ngFor="let item of items; let i = index;">
+  <img draggable="true" (dragstart)="dragPlant($event)" attr.data-index="{{i}}" [src]="item.plant.images.harvested">
+  <div>{{item.plant.name}}</div>
+  <div>x{{item.quantity}}</div>
+</div>

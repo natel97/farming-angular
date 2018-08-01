@@ -1,0 +1,45 @@
+[{
+  "id": 1,
+  "plant": {
+    "id": 1,
+    "cost": 10,
+    "images": {
+      "dead": "assets/img/dead.svg",
+      "harvested": "assets/img/sunflower.svg",
+      "harvestable": "assets/img/pluckable-sunflower.svg",
+      "teen": "assets/img/young-sunflower.svg"
+    },
+    "worth": 25,
+    "hoursToDry": 7,
+    "hoursToDie": 14,
+    "hoursToTeen": 21,
+    "hoursToHarvest": 42,
+    "experienceGained": 1000,
+    "name": "Sunflower"
+  },
+  "cost": 10,
+  "sellFor": 25,
+  "quantity": null
+}, {
+  "id": 2,
+  "plant": {
+    "id": 2,
+    "cost": 10,
+    "images": {
+      "dead": "assets/img/dead.svg",
+      "harvestable": "assets/img/happy-watermelon.svg",
+      "harvested": "assets/img/watermelon.svg",
+      "teen": "assets/img/teen-watermelon.svg"
+    },
+    "worth": 50,
+    "hoursToDry": 4,
+    "hoursToDie": 14,
+    "hoursToTeen": 21,
+    "hoursToHarvest": 42,
+    "experienceGained": 700,
+    "name": "Watermelon"
+  },
+  "cost": 10,
+  "sellFor": 25,
+  "quantity": null
+}]

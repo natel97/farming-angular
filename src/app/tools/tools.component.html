@@ -1,0 +1,4 @@
+<div *ngFor="let tool of tools">
+  <img draggable="true" (dragstart)="setTool($event, tool.id)" [src]="tool.image">
+  <div>{{tool.name}}</div>
+</div>
