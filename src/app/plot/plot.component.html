@@ -4,7 +4,6 @@
     <p [hidden]="plot.plantIsAlive()">DEAD!!!</p>
     <p>{{plot.plant.name}}</p>
     <div [hidden]="!plot.plantIsAlive()" id="living-details">
-        <p>Time left: {{getHoursLeft() | number: '1.2-2'}} seconds</p>
         <p>Water: {{getWaterPercent() | number: '1.2-2'}}%</p>
     </div>
 </div>

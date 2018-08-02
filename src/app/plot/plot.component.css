@@ -7,6 +7,10 @@
   user-select: none;
 }
 
+.night :host img {
+    mix-blend-mode: multiply;
+}
+
 img {
   transition: filter 6s;
 }

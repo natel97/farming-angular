@@ -4,6 +4,14 @@
     align-items: center;
 }
 
+.night :host {
+    color: white;
+}
+
+.night :host #popup {
+    background-color: #333;
+}
+
 :host > div {
     border: 1px solid black;
     margin :12px;

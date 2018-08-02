@@ -28,10 +28,7 @@ export class ToolService {
     }, 'assets/img/water.svg'),
 
     new Tool(3, 'Harvester', (plot: Plot, cb) => {
-      console.log('hvstr');
-      console.log(plot.plantIsAlive());
       if (plot.plant && plot.planted.getTime() + (plot.plant.hoursToHarvest * this.hour) < Date.now() && plot.plantIsAlive()) {
-        console.log('ifff');
         cb();
         plot.planted = null;
         plot.ready = null;

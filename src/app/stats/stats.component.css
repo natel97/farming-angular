@@ -1,0 +1,9 @@
+.night :host {
+    color: white;
+    transition: color 4s;
+}
+
+:host {
+    color: black;
+    transition: color 4s;
+}

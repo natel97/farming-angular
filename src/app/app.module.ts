@@ -29,10 +29,19 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     HttpClientModule,
     RouterModule.forRoot([
-      { path: 'inventory', component: InventoryComponent },
-      { path: 'farm/:id', component: FarmComponent },
+      {
+        path: 'farm/:id', component: FarmComponent, children: [
+          {
+            path: 'tools',
+            component: ToolsComponent
+          },
+          {
+            path: '**',
+            component: InventoryComponent
+          }]
+      },
       { path: 'store', component: StoreComponent },
-      { path: '**', redirectTo: 'farm/1'}
+      { path: '**', redirectTo: 'farm/1' }
     ])
   ],
   providers: [],

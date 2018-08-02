@@ -27,9 +27,9 @@ export class PlotComponent implements OnInit {
     }, 300);
   }
 
-  getHoursLeft() {
-    return this.plot.plant.hoursToHarvest * this.hour - (Date.now() - this.plot.planted.getTime()) / this.realHour * this.hour;
-  }
+  // getHoursLeft() {
+  //   return this.plot.plant.hoursToHarvest * this.hour - (Date.now() - this.plot.planted.getTime()) / this.realHour * this.hour;
+  // }
 
   getWaterPercent() {
     return 100 - ((Date.now() - this.plot.lastWatered.getTime()) / this.hour * 100) / (this.plot.plant.hoursToDie);

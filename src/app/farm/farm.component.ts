@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Plot } from '../plot/plot';
 import { FarmService } from '../farm.service';
 import { switchMap } from 'rxjs/operators';
-import { Observable, of } from '../../../node_modules/rxjs';
+import { of } from '../../../node_modules/rxjs';
 
 @Component({
   selector: 'app-farm',
@@ -13,17 +13,15 @@ import { Observable, of } from '../../../node_modules/rxjs';
 export class FarmComponent implements OnInit {
 
   plots: Plot[];
-  selectedIndex = 1;
 
   constructor(private farmService: FarmService, private route: ActivatedRoute) {}
 
+  farmNo: number;
+
   ngOnInit() {
-    this.route.paramMap.pipe(switchMap((params: ParamMap) => of(params.get('id')))).subscribe(console.log);
+    this.route.paramMap.pipe(switchMap((params: ParamMap) => of(params.get('id')))).subscribe((val) => this.farmNo = parseInt(val, 10));
     this.plots = this.farmService.getFarmPlots();
 
-  }
-  changeIndex(event, index) {
-    this.selectedIndex = index;
   }
 
   toggleHelp() {

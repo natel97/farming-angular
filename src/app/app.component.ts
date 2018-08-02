@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+
+
+  constructor() {
+    setInterval(() => document.getElementsByTagName('body')[0].
+    classList.toggle('night'), 60000);
+  }
 }
