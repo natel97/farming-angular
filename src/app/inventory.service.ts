@@ -24,7 +24,13 @@ export class InventoryService {
       harvestable: 'assets/img/happy-watermelon.svg',
       harvested: 'assets/img/watermelon.svg',
       teen: 'assets/img/teen-watermelon.svg',
-    }, 50, 4, 8, 21, 42, 700, 'Watermelon'), 100, 25, 2)
+    }, 50, 4, 8, 21, 42, 700, 'Watermelon'), 100, 25, 2),
+    new Item(3, new Plant(3, 100, {
+      'dead': 'assets/img/dead.svg',
+      'harvested': 'assets/img/strawberry-harvest.svg',
+      'harvestable': 'assets/img/yummy-strawberry.svg',
+      'teen': 'assets/img/teen-strawberry.svg'
+    }, 250, 8, 14, 30, 58, 1400, 'Strawberry'), 100, 250, 0)
   ];
 
   getAvailableInventory(): Item[] {

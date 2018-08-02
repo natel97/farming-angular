@@ -42,4 +42,26 @@
   "cost": 10,
   "sellFor": 25,
   "quantity": null
+}, {
+  "id": 3,
+  "plant": {
+    "id": 3,
+    "cost": 100,
+    "images": {
+      "dead": "assets/img/dead.svg",
+      "harvested": "assets/img/strawberry-harvest.svg",
+      "harvestable": "assets/img/yummy-strawberry.svg",
+      "teen": "assets/img/teen-strawberry.svg"
+    },
+    "worth": 250,
+    "hoursToDry": 8,
+    "hoursToDie": 14,
+    "hoursToTeen": 30,
+    "hoursToHarvest": 58,
+    "experienceGained": 1400,
+    "name": "Strawberry"
+  },
+  "cost": 100,
+  "sellFor": 250,
+  "quantity": null
 }]
