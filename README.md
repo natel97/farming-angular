@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Honestly, I don't really know! Haha!
 So pretty much, just drag and drop stuff on other stuff until it magically grows and stuff. Feeling like a cheater/hacker? Type 
 ```javascript
-window["Give Me MONEY!!!"](**Amount to give goes here**)
+window["Give Me MONEY!!!"](moneyToAdd)
 ```
 into the console to get you some quick cash!
 
